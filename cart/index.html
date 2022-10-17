@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+  
+    <title>Shopping Cart | Your website title</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="canonical" href="https://monsoonmalabar.com/pinky/cart/">
+    <link rel="alternate" type="application/rss+xml" title="Your website title" href="https://monsoonmalabar.com/pinky/feed.xml">
+    
+    <meta property="og:url" content="https://monsoonmalabar.com/pinky/cart/">
+    <meta property="og:title" content="Shopping Cart|Your website title">
+    
+    <meta property="og:image" content="">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://monsoonmalabar.com/pinky/js/jquery.shop.js"></script>
+
+
+    <link rel="icon" type="image/png" href=""/>
+    <link rel="apple-touch-icon" sizes="192x192" href="">
+    <link rel="manifest" href="https://monsoonmalabar.com/pinky/manifest.json">
+
+    <script src="https://monsoonmalabar.com/pinky/js/sw-reg.js"></script>
+    <script src="https://monsoonmalabar.com/pinky/js/pwa-app.js"></script>
+
+    <link rel="stylesheet" href="https://monsoonmalabar.com/pinky/css/main.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '');
+    </script>
+    
+  </head>
+  <body class="bg-light">
+    <div class="site-container">
+      <header class="site-header" itemscope itemtype="http://schema.org/WPHeader">
+        <div class="wrap" style="margin-bottom: 80px;">  
+          <!--Navbar-->
+          <nav class="navbar navbar-expand-lg justify-content-between fixed-top scrolling-navbar navbar-dark info-color">
+
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="https://monsoonmalabar.com/pinky/">Your website title</a>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link px-2" href="https://monsoonmalabar.com/pinky/cart">
+                  <i class="fa fa-shopping-cart"></i> <span class="bg-danger badge"></span>
+                </a> 
+              </li>
+            </ul>
+            <!-- Collapse button -->
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+              aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> -->
+            
+            <!-- Collapsible content -->
+            <!-- <div class="collapse navbar-collapse" id="basicExampleNav">
+              <form class="form-inline">
+                <div class="md-form my-0">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                </div>
+              </form>
+            </div> -->
+            <!-- Collapsible content -->
+          </nav>   
+        </div>
+      </header>
+      <div id="site" class="container my-4">
+	<div id="content" class="card card-body">
+		<h1 class="text-center" id="full-site">Shopping Cart</h1>
+		<form id="shopping-cart" action="https://monsoonmalabar.com/pinky/cart" method="get">
+			<div class="table-responsive text-nowrap">
+				<table class="shopping-cart table table-bordered">
+				<thead>
+					<tr>
+						<th scope="col">Item</th>
+						<th scope="col">Qty</th>
+						<th scope="col" colspan="2">Price</th>
+					</tr>
+				</thead>
+				<tbody>
+				
+				</tbody>
+				</table>
+			</div>
+			<p id="sub-total">
+				<strong>Sub Total</strong>: <span id="stotal"></span>
+			</p>
+			<div id="shopping-cart-actions">
+				<input type="submit" name="update" id="update-cart" class="btn btn-md rounded-pill btn-info" value="Update Cart" />
+				<input type="submit" name="delete" id="empty-cart" class="btn btn-md rounded-pill btn-info" value="Empty Cart" />
+				<a href="https://monsoonmalabar.com/pinky/index.html" class="btn btn-md rounded-pill btn-info">Continue Shopping</a>
+				<a href="https://monsoonmalabar.com/pinky/checkout" class="btn btn-md rounded-pill btn-info">Go To Checkout</a>
+			</div>
+		</form>
+	</div>
+	
+	
+
+</div>
+      <div class="text-center my-3">
+        <a href="#" onclick="addToHomeScreen()" class="btn-md rounded-pill btn btn-secondary pwa">Install App</a>
+        <a href="https://monsoonmalabar.com/pinky/blog" class="btn-md rounded-pill btn btn-secondary">Blog</a>
+        <a href="https://monsoonmalabar.com/pinky/" class="btn-md rounded-pill btn btn-secondary">Go Home</a>
+        <a href="https://www.monsoonmalabar.com/search_shop" class="btn-md rounded-pill btn btn-secondary">Search nearby shops</a>
+        
+        <p class="pwa my-2 note note-info">Note: Install App button only works in google chrome browser in android phone. So update your chrome and open this site in chrome browser. In I phone open this portal in safari and <a href="https://forum.monsoonmalabar.com/board/1/-Mdg3u1VndHyGpLGMTIw">click here to know how to install</a>.</p>
+      </div>
+      <div style="width: 100%">
+        <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        <p class="note note-info">Click on "view larger map" to get direction</p>
+      </div>
+    </div>
+    <script>
+      const url = new URL(window.location.href);
+      const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+      if (navigator.standalone || isStandalone) {
+        console.log('it works');
+      Array.from(
+        document.getElementsByClassName("pwa")
+      ).forEach((e)=>e.style.display='none')
+      }
+    </script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    
+      <script async src="https://monsoonmalabar.com/pinky/js/style-picker.js"></script>
+      <script>
+        $(document).ready(function(){
+       $('.zoom-2').zoom();
+      });
+      </script>
+      <script src="https://monsoonmalabar.com/pinky/js/s.min.js"></script>
+    
+    <script src="https://monsoonmalabar.com/pinky/js/infinite.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "Your website title",
+  "short_name": "Your website title",
+  "icons": [
+    {
+      "src": "https://monsoonmalabar.com/pinky\/logo.png",
+      "sizes": "192x192",
+      "type": "image\/png"
+    }
+  ],
+  "theme_color": "#33b5e5",
+  "background_color": "#fdfdfd",
+  "start_url": "https://monsoonmalabar.com/pinky\/",
+  "display": "standalone",
+  "orientation": "natural"
+}
